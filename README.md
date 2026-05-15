@@ -33,41 +33,6 @@ Minimalism, speed, and no unnecessary dependencies.
 | Connect | **"Connect"** button |
 
 When connecting, the program calls:
-```cmd
-openvpn.exe --config "path\to\.ovpn config"
+```cmd openvpn.exe --config "path\to\.ovpn config"
 
-RU: 
-# MysteryVPN Client — C++ GUI для OpenVPN
 
-Нативное Windows-приложение на **C++ (WinAPI)** для подключения к OpenVPN через `.ovpn`-конфиги.  
-Минимализм, скорость и никаких лишних зависимостей.
-
-## 🧱 Требования
-
-- **Windows** 7/8/10/11
-- **OpenVPN** (любая версия) — [официальный сайт](https://openvpn.net/community-downloads/)
-- OpenVPN должен быть установлен и доступен через `%PATH%`
-
-> Этот проект **не содержит** OpenVPN. Он только запускает уже установленный.
-
-## 📦 Установка
-
-1. Скачай архив `MysteryVPNClient.zip` из раздела **Releases**
-2. Распакуй **все содержимое в одну папку**
-   - Пример: `C:\MysteryVPNClient\`
-   - Внутри должны лежать `VPNClient.exe` и сопутствующие файлы
-3. Запусти `VPNClient.exe` (права администратора не требуются)
-
-> ⚠️ Важно: программа использует относительные пути. Не перемещайте файлы по отдельности.
-
-## 🎮 Использование
-
-| Действие | Что нажать |
-|----------|-------------|
-| Выбрать `.ovpn` конфиг | Кнопка **«Выбрать конфиг»** |
-| Забыть текущий конфиг | Кнопка **«Очистить»** |
-| Подключиться | Кнопка **«Подключиться»** |
-
-При подключении программа вызывает:
-```cmd
-openvpn.exe --config "путь\к\конфигу.ovpn"
